@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "alexiscontentmod:block/wheyprotien",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "alexiscontentmod:block/wheyprotien"
+    },
+    "facing=south": {
+      "model": "alexiscontentmod:block/wheyprotien",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "alexiscontentmod:block/wheyprotien",
+      "y": 270
+    }
+  }
+}
