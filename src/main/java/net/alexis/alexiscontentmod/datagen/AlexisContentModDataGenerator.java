@@ -1,5 +1,7 @@
 package net.alexis.alexiscontentmod.datagen;
 
+import net.alexis.alexiscontentmod.datagen.lang.AlexisContentModEnglishLangProvider;
+import net.alexis.alexiscontentmod.datagen.model.AlexisContentModModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -8,6 +10,7 @@ public class AlexisContentModDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		
+		pack.addProvider(AlexisContentModModelProvider::new);
+		pack.addProvider(AlexisContentModEnglishLangProvider::new);
 	}
 }

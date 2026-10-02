@@ -9,9 +9,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
@@ -19,6 +20,32 @@ import java.util.function.Function;
 public class AlexisContentModBlocks {
     public static Block WHEYPROTIEN = register("wheyprotien", settings -> new WheyProtienBlock(settings
             .sound(SoundType.COPPER)
+            ), Rarity.COMMON
+    );
+
+
+    // Calcite Blocks
+    /*
+    public static Block CALCITE_STAIRS = register("calcite_stairs", settings -> new StairBlock(settings
+            ), Rarity.COMMON
+    );
+     */
+
+    public static Block CALCITE_SLAB = register("calcite_slab", settings -> new SlabBlock(settings
+                .mapColor(MapColor.TERRACOTTA_WHITE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .sound(SoundType.CALCITE)
+                .requiresCorrectToolForDrops()
+                .strength(0.75F)
+            ), Rarity.COMMON
+    );
+
+    public static Block CALCITE_WALL = register("calcite_wall", settings -> new WallBlock(settings
+                .mapColor(MapColor.TERRACOTTA_WHITE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .sound(SoundType.CALCITE)
+                .requiresCorrectToolForDrops()
+                .strength(0.75F)
             ), Rarity.COMMON
     );
 
