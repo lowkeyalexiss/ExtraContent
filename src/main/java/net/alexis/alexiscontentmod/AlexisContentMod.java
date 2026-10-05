@@ -2,6 +2,7 @@ package net.alexis.alexiscontentmod;
 
 import net.alexis.alexiscontentmod.index.AlexisContentModBlockEntities;
 import net.alexis.alexiscontentmod.index.AlexisContentModBlocks;
+import net.alexis.alexiscontentmod.index.AlexisContentModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -18,8 +19,9 @@ public class AlexisContentMod implements ModInitializer {
 	public void onInitialize() {
 		AlexisContentModBlocks.init();
 		AlexisContentModBlockEntities.init();
+		AlexisContentModItems.init();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("adding content BOOM");
 	}
 
 	public static Identifier id(String path) {

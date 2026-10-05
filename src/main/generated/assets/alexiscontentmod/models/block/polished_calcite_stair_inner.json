@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "alexiscontentmod:block/polished_calcite",
+    "side": "alexiscontentmod:block/polished_calcite",
+    "top": "alexiscontentmod:block/polished_calcite"
+  }
+}
