@@ -1,5 +1,9 @@
 {
   "block.alexiscontentmod.calcite_slab": "Calcite Slab",
+  "block.alexiscontentmod.calcite_stair": "Calcite Stair",
   "block.alexiscontentmod.calcite_wall": "Calcite Wall",
-  "block.alexiscontentmod.wheyprotien": "Whey Protien"
+  "block.alexiscontentmod.polished_calcite": "Polished Calcite Wall",
+  "block.alexiscontentmod.polished_calcite_slab": "Polished Calcite Slab",
+  "block.alexiscontentmod.polished_calcite_stair": "Polished Calcite Stair",
+  "block.alexiscontentmod.polished_calcite_wall": "Polished Calcite Wall"
 }

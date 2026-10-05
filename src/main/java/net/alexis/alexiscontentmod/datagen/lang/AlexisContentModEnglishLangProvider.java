@@ -14,10 +14,14 @@ public class AlexisContentModEnglishLangProvider extends FabricLanguageProvider 
 
     @Override
     public void generateTranslations(HolderLookup.Provider holderLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add(AlexisContentModBlocks.WHEYPROTIEN, "Whey Protien");
-
-        // translationBuilder.add(AlexisContentModBlocks.CALCITE_STAIR, "Calcite Stair");
+        translationBuilder.add(AlexisContentModBlocks.CALCITE_STAIR, "Calcite Stair");
         translationBuilder.add(AlexisContentModBlocks.CALCITE_SLAB, "Calcite Slab");
         translationBuilder.add(AlexisContentModBlocks.CALCITE_WALL, "Calcite Wall");
+
+        translationBuilder.add(AlexisContentModBlocks.POLISHED_CALCITE, "Polished Calcite");
+        translationBuilder.add(AlexisContentModBlocks.POLISHED_CALCITE_STAIR, "Polished Calcite Stair");
+        translationBuilder.add(AlexisContentModBlocks.POLISHED_CALCITE_SLAB, "Polished Calcite Slab");
+        translationBuilder.add(AlexisContentModBlocks.POLISHED_CALCITE_WALL, "Polished Calcite Wall");
+
     }
 }

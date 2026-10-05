@@ -1,5 +1,6 @@
 package net.alexis.alexiscontentmod.datagen.model;
 
+import net.alexis.alexiscontentmod.index.AlexisContentModBlockIds;
 import net.alexis.alexiscontentmod.index.AlexisContentModBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -15,9 +16,14 @@ public class AlexisContentModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
         blockStateModelGenerator.family(Blocks.CALCITE)
-                // .stairs(AlexisContentModBlocks.CALCITE_STAIR)
+                .stairs(AlexisContentModBlocks.CALCITE_STAIR)
                 .slab(AlexisContentModBlocks.CALCITE_SLAB)
                 .wall(AlexisContentModBlocks.CALCITE_WALL);
+
+        blockStateModelGenerator.family(AlexisContentModBlocks.POLISHED_CALCITE)
+                .stairs(AlexisContentModBlocks.POLISHED_CALCITE_STAIR)
+                .slab(AlexisContentModBlocks.POLISHED_CALCITE_SLAB)
+                .wall(AlexisContentModBlocks.POLISHED_CALCITE_WALL);
     }
 
     @Override
