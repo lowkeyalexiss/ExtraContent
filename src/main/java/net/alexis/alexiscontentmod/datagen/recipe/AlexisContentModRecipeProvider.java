@@ -1,5 +1,6 @@
 package net.alexis.alexiscontentmod.datagen.recipe;
 
+import net.alexis.alexiscontentmod.index.AlexisContentModBlockFamilies;
 import net.alexis.alexiscontentmod.index.AlexisContentModBlockIds;
 import net.alexis.alexiscontentmod.index.AlexisContentModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -27,8 +28,8 @@ public class AlexisContentModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
-                generateRecipes(AlexisContentModBlockIds.CALCITE_FAMILY, FeatureFlagSet.of(FeatureFlags.VANILLA));
-                generateRecipes(AlexisContentModBlockIds.POLISHED_CALCITE_FAMILY, FeatureFlagSet.of(FeatureFlags.VANILLA));
+                generateRecipes(AlexisContentModBlockFamilies.CALCITE_FAMILY, FeatureFlagSet.of(FeatureFlags.VANILLA));
+                generateRecipes(AlexisContentModBlockFamilies.POLISHED_CALCITE_FAMILY, FeatureFlagSet.of(FeatureFlags.VANILLA));
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, AlexisContentModBlocks.CALCITE_STAIR, Items.CALCITE);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, AlexisContentModBlocks.CALCITE_SLAB, Items.CALCITE);
