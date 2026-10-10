@@ -19,7 +19,7 @@ public class AlexisContentModBlocks {
     public static final Block ALEXIS_PLUSH = register(
             AlexisContentModBlockIds.ALEXIS_PLUSH,
             PlushBlock::new,
-            BlockBehaviour.Properties.of()
+            BlockBehaviour.Properties.of().noOcclusion()
     );
 
     // Calcite Blocks

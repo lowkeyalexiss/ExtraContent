@@ -18,13 +18,14 @@ public class AlexisContentModModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
-        blockStateModelGenerator.family(Blocks.CALCITE)
+    public void generateBlockStateModels(BlockModelGenerators generator) {
+        generator.createRotatableColumn(AlexisContentModBlocks.ALEXIS_PLUSH);
+        generator.family(Blocks.CALCITE)
                 .stairs(AlexisContentModBlocks.CALCITE_STAIR)
                 .slab(AlexisContentModBlocks.CALCITE_SLAB)
                 .wall(AlexisContentModBlocks.CALCITE_WALL);
 
-        blockStateModelGenerator.family(AlexisContentModBlocks.POLISHED_CALCITE)
+        generator.family(AlexisContentModBlocks.POLISHED_CALCITE)
                 .stairs(AlexisContentModBlocks.POLISHED_CALCITE_STAIR)
                 .slab(AlexisContentModBlocks.POLISHED_CALCITE_SLAB)
                 .wall(AlexisContentModBlocks.POLISHED_CALCITE_WALL);
