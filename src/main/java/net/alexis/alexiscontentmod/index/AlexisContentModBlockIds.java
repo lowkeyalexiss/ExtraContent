@@ -8,18 +8,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Blocks;
 
 public class AlexisContentModBlockIds {
-    public static final BlockFamily CALCITE_FAMILY = BlockFamilies.familyBuilder(Blocks.CALCITE)
-            .slab(AlexisContentModBlocks.CALCITE_SLAB)
-            .stairs(AlexisContentModBlocks.CALCITE_STAIR)
-            .wall(AlexisContentModBlocks.CALCITE_WALL)
-            .getFamily();
-
-    public static final BlockFamily POLISHED_CALCITE_FAMILY = BlockFamilies.familyBuilder(AlexisContentModBlocks.POLISHED_CALCITE)
-            .slab(AlexisContentModBlocks.POLISHED_CALCITE_SLAB)
-            .stairs(AlexisContentModBlocks.POLISHED_CALCITE_STAIR)
-            .wall(AlexisContentModBlocks.POLISHED_CALCITE_WALL)
-            .getFamily();
-
     // plush
     public static final BlockItemId ALEXIS_PLUSH = create("alexis_plush");
 

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "alexiscontentmod:polished_calcite",
+  "result": {
+    "id": "alexiscontentmod:polished_calcite_wall"
+  }
+}
