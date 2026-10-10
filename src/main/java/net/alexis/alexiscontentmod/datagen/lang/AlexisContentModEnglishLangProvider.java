@@ -1,6 +1,7 @@
 package net.alexis.alexiscontentmod.datagen.lang;
 
 import net.alexis.alexiscontentmod.index.AlexisContentModBlocks;
+import net.alexis.alexiscontentmod.index.AlexisContentModSounds;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;
@@ -14,6 +15,8 @@ public class AlexisContentModEnglishLangProvider extends FabricLanguageProvider 
 
     @Override
     public void generateTranslations(HolderLookup.Provider holderLookup, TranslationBuilder translationBuilder) {
+        //translationBuilder.add("blocks.alexis_plush.gleep", "Plushie Gleeps");
+
         translationBuilder.add(AlexisContentModBlocks.CALCITE_STAIR, "Calcite Stair");
         translationBuilder.add(AlexisContentModBlocks.CALCITE_SLAB, "Calcite Slab");
         translationBuilder.add(AlexisContentModBlocks.CALCITE_WALL, "Calcite Wall");

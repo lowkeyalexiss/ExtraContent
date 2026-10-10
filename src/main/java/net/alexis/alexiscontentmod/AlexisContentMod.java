@@ -1,8 +1,9 @@
 package net.alexis.alexiscontentmod;
 
-import net.alexis.alexiscontentmod.index.AlexisContentModBlockEntities;
+import net.alexis.alexiscontentmod.index.AlexisContentModBlockEntityType;
 import net.alexis.alexiscontentmod.index.AlexisContentModBlocks;
 import net.alexis.alexiscontentmod.index.AlexisContentModItems;
+import net.alexis.alexiscontentmod.index.AlexisContentModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -18,8 +19,9 @@ public class AlexisContentMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		AlexisContentModBlocks.init();
-		AlexisContentModBlockEntities.init();
 		AlexisContentModItems.init();
+		AlexisContentModBlockEntityType.init();
+		//AlexisContentModSounds.init();
 
 		LOGGER.info("adding content BOOM");
 	}

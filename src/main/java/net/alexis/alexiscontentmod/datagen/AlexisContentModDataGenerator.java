@@ -2,6 +2,7 @@ package net.alexis.alexiscontentmod.datagen;
 
 import net.alexis.alexiscontentmod.datagen.lang.AlexisContentModEnglishLangProvider;
 import net.alexis.alexiscontentmod.datagen.model.AlexisContentModModelProvider;
+import net.alexis.alexiscontentmod.datagen.recipe.AlexisContentModRecipeProvider;
 import net.alexis.alexiscontentmod.datagen.tag.AlexisContentModBlockTagProvider;
 import net.alexis.alexiscontentmod.datagen.tag.AlexisContentModItemTagProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -16,5 +17,6 @@ public class AlexisContentModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(AlexisContentModEnglishLangProvider::new);
 		pack.addProvider(AlexisContentModItemTagProvider::new);
 		pack.addProvider(AlexisContentModBlockTagProvider::new);
+		pack.addProvider(AlexisContentModRecipeProvider::new);
 	}
 }

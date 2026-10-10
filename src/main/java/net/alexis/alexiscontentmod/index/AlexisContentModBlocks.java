@@ -1,5 +1,6 @@
 package net.alexis.alexiscontentmod.index;
 
+import net.alexis.alexiscontentmod.blocks.PlushBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
@@ -15,6 +16,12 @@ import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.of
 
 
 public class AlexisContentModBlocks {
+    public static final Block ALEXIS_PLUSH = register(
+            AlexisContentModBlockIds.ALEXIS_PLUSH,
+            PlushBlock::new,
+            BlockBehaviour.Properties.of()
+    );
+
     // Calcite Blocks
 
     public static final Block CALCITE_STAIR = register(
